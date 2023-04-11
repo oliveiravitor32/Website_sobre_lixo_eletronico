@@ -1,0 +1,17 @@
+.action-link {
+    font-family: 'Fira Code', monospace;
+    text-decoration: none;
+    color: var(--color-second);
+    font-weight: 700;
+}
+
+.action-link:hover {
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+@media screen and (max-width: 970px) {
+    .action-link {
+        font-size: 20px;
+    }
+}

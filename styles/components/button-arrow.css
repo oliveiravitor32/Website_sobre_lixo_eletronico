@@ -1,0 +1,30 @@
+.button-arrow {
+    position: absolute;
+    text-indent: -9999px;
+    background-color: transparent;
+    width: 160px;
+    height: 100%;
+    display: flex;
+
+    border: none;
+    background-position: 50%;
+    background-size: 50px;
+    box-sizing: border-box;
+}
+.button-arrow:hover {
+    transform: scale(1.15);
+    cursor: grab;
+}
+
+.button-arrow.-left {   
+    left: 0;
+    background-image: url(../../assets/images/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+.button-arrow.-right {
+    right: 0;
+    background-image: url(../../assets/images/arrow-right.svg);
+    background-repeat: no-repeat;
+} 

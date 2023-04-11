@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Waste</title>
+
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
+
+    <!-- FONTS FIRACODE(400, 500, 700)  POPPINS(400, 500, 600)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/reset.css">
+
+    <link rel="stylesheet" href="../../styles/components/header-main.css">
+    <link rel="stylesheet" href="../../styles/components/menu-main.css">
+    <link rel="stylesheet" href="../../styles/components/action-link.css">
+    <link rel="stylesheet" href="../../styles/components/language-dropdown.css">
+
+    <link rel="stylesheet" href="../../styles/components/banner-main.css">
+    <link rel="stylesheet" href="../../styles/components/carousel-main.css">
+    <link rel="stylesheet" href="../../styles/components/nav-slides.css">
+    <link rel="stylesheet" href="../../styles/components/button-arrow.css">
+    <link rel="stylesheet" href="../../styles/components/button-circle.css">
+
+    <link rel="stylesheet" href="../../styles/components/section-main.css">
+    <link rel="stylesheet" href="../../styles/components/title-main.css">
+    <link rel="stylesheet" href="../../styles/components/text-main.css">
+
+</head>
+<body>
+    <header class="header-main">
+        <img class="logo" src="../../assets/images/logo.jpg" alt="">
+        <nav id="menu-nav" class="menu-main">
+            <a class="action-link" href="">Home</a>
+            <a class="action-link" href="">Impacts</a>
+            <a class="action-link" href="">Causes</a>
+            <a class="action-link" href="">How to combat?</a>
+            <a class="action-link" href="">Contact Us</a>
+           
+            <div class="wrapper-dropdown">
+                <button class="language-dropdown" onclick="selectLanguage()">
+                    Change language
+                    <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
+                </button>
+                <div class="modal-flags">
+                    <a class="flag-option" href="../pages-pt-br/home.html"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Icon flag of Brazil."></a>
+                    <a class="flag-option"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Icon flag of United States."></a>
+                </div>
+            </div>
+        </nav>
+
+        <a href="#menu-nav" class="mobile-menu" onclick="toggleMenu()">Open and close menu.</a>
+
+        
+    </header>
+
+    <section class="banner-main">
+
+        <div class="carousel-main">
+        <button class="button-arrow -left" onclick="previousSlide()">Go to previous slide.</button>
+
+            <ol class="carousel-viewport">
+                
+                <li id="slideOne" class="slide -onScreen">
+                    <h1>1</h1>
+                </li>
+                <li id="slideTwo" class="slide">
+                    <h1>2</h1>
+                </li>
+                <li id="slideThree" class="slide">
+                    <h1>3</h1>
+                </li>
+                    
+            </ol>
+
+            <ol class="nav-slides">
+                <li id="circleOne" class="button-circle -onScreen" onclick="circleReference(1)">Go to slide one.</li>
+                <li id="circleTwo" class="button-circle" onclick="circleReference(2)">Go to slide two.</li>
+                <li id="circleThree" class="button-circle" onclick="circleReference(3)">Go to slide three.</li>
+            </ol>
+
+        <button class="button-arrow -right" onclick="nextSlide()">Go to next slide.</button>
+        </div>
+
+    </section>
+
+    <section class="section-main">
+        
+        <h1 class="title-main">Eletronic waste</h1>
+
+        <p class="text-main">The electronic waste by the name itself it is already possible to notice that it comes from electronic materials,
+             being of inorganic origin some examples of it are: copper, lead, aluminum...
+        </p>
+        <p class="text-main">
+        In addition, the electronic waste can implicate the lives of beings and the environment since they are
+        composed of very polluting elements compromising the environment and also when these elements
+        come into contact with the skin can lead to various diseases for animals and humans.
+        </p>
+    </section>
+    
+
+    <script src="../../scripts/components/toggleMobileMenu.js"></script>
+    <script src="../../scripts/components/carousel-move.js"></script>
+    <script src="../../scripts/components/dropdown-flags.js"></script>
+</body>
+</html>

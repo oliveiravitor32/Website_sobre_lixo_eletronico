@@ -1,0 +1,15 @@
+.header-main {
+    position: relative;
+    background-color: var(--color-first);
+    
+    box-sizing: border-box;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main .logo {
+    height: 45px;
+    width: auto;
+}

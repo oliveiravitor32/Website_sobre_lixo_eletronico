@@ -1,0 +1,8 @@
+.nav-slides {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+    transform: translateX(-50%);
+}
