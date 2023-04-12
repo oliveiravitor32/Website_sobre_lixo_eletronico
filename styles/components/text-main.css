@@ -1,6 +1,26 @@
 .text-main {
-    width: 60%;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 20px;
+    display: inline-block;
+    width: 40%;
+    margin: 25px 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .text-main {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .text-main {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .text-main {
+        width: 90%;
+    }
 }

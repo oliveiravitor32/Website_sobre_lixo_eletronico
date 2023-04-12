@@ -2,4 +2,12 @@
     --color-first: #004A7A;
     --color-second: white;
     --color-third: #d1ecff;
+    --color-fourth: #28666E;
+    --color-fifth: #dfdff7;
+    --color-sixth: #0f0f32;
+    --color-seventh: #212135;
+}
+
+body {
+    background-color: var(--color-fifth);
 }

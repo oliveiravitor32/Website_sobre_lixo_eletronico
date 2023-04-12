@@ -1,6 +1,23 @@
 .wrapper-main {
     display: flex;
     align-items: center;
+    justify-items: center;
     flex-direction: column;
     gap: 10px;
+}
+
+.wrapper-main.-ilustration {
+    width: 95%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .wrapper-main.-ilustration {
+        width: 95%;
+        flex-direction: column;
+        gap: 0;
+    }.wrapper-main.-ilustration.-right {
+        flex-direction: column-reverse;
+    }
 }

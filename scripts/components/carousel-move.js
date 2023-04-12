@@ -8,10 +8,37 @@ const circle1 = document.querySelector("#circleOne");
 const circle2 = document.querySelector("#circleTwo");
 const circle3 = document.querySelector("#circleThree");
 
+let slideActual
+
+setInterval( () => {
+    checkActualSlide();
+    removeOnScreen();
+
+    if (slideActual === 1) {
+        slide2.classList.add("-onScreen")  
+        circle2.classList.add("-onScreen")   
+    } else if (slideActual === 2) {
+        slide3.classList.add("-onScreen")
+        circle3.classList.add("-onScreen") 
+    } else if (slideActual === 3) {
+        slide1.classList.add("-onScreen")
+        circle1.classList.add("-onScreen") 
+    }
+}, 8000)
+
 function removeOnScreen() {
     slide1.classList.remove("-onScreen")
+    slide1.classList.remove("-fromRight")
+    slide1.classList.remove("-fromLeft")
+
     slide2.classList.remove("-onScreen")
+    slide2.classList.remove("-fromRight")
+    slide2.classList.remove("-fromLeft")
+
     slide3.classList.remove("-onScreen")
+    slide3.classList.remove("-fromRight")
+    slide3.classList.remove("-fromLeft")
+
 
     circle1.classList.remove("-onScreen")
     circle2.classList.remove("-onScreen")
@@ -19,83 +46,88 @@ function removeOnScreen() {
 }
 
 function nextSlide() {
+    checkActualSlide();
 
-    let slide1On = slide1.classList.contains("-onScreen")
-    let slide2On = slide2.classList.contains("-onScreen")
-    let slide3On = slide3.classList.contains("-onScreen")
-
-    if (slide1On === true) {
-        slide1.classList.remove("-onScreen")
+    if (slideActual === 1) {
+        removeOnScreen();
         slide2.classList.add("-onScreen")  
+        slide2.classList.add("-fromRight")
 
-        circle1.classList.remove("-onScreen")
         circle2.classList.add("-onScreen")   
-    } else if (slide2On === true) {
-        slide2.classList.remove("-onScreen")
+    } else if (slideActual === 2) {
+        removeOnScreen();
         slide3.classList.add("-onScreen")
+        slide3.classList.add("-fromRight")
         
-        circle2.classList.remove("-onScreen")
         circle3.classList.add("-onScreen") 
-    } else if (slide3On === true) {
-        slide3.classList.remove("-onScreen")
+    } else if (slideActual === 3) {
+        removeOnScreen();
         slide1.classList.add("-onScreen")
+        slide1.classList.add("-fromRight")
 
-        circle3.classList.remove("-onScreen")
         circle1.classList.add("-onScreen") 
     }
 }
 
 function previousSlide() {
+    checkActualSlide();
 
-    let slide1On = slide1.classList.contains("-onScreen")
-    let slide2On = slide2.classList.contains("-onScreen")
-    let slide3On = slide3.classList.contains("-onScreen")
-
-    if (slide1On === true) {
-        slide1.classList.remove("-onScreen")
+    if (slideActual === 1) {
+        removeOnScreen();
         slide3.classList.add("-onScreen")   
+        slide3.classList.add("-fromLeft")
 
-        circle1.classList.remove("-onScreen")
         circle3.classList.add("-onScreen")  
-    } else if (slide2On === true) {
-        slide2.classList.remove("-onScreen")
+    } else if (slideActual === 2) {
+        removeOnScreen();
         slide1.classList.add("-onScreen")
+        slide1.classList.add("-fromLeft")
 
-        circle2.classList.remove("-onScreen")
         circle1.classList.add("-onScreen") 
-    } else if (slide3On === true) {
-        slide3.classList.remove("-onScreen")
+    } else if (slideActual === 3) {
+        removeOnScreen();
         slide2.classList.add("-onScreen")
+        slide2.classList.add("-fromLeft")
 
-        circle3.classList.remove("-onScreen")
         circle2.classList.add("-onScreen") 
     }
 }
 
 function circleReference(slide) {
-
-    let slide1On = slide1.classList.contains("-onScreen")
-    let slide2On = slide2.classList.contains("-onScreen")
-    let slide3On = slide3.classList.contains("-onScreen")
-
     if (slide === 1) {
-        if (!slide1On) {
+        if (slideActual !== 1) {
             removeOnScreen()
             slide1.classList.add("-onScreen")
+            slide1.classList.add("-fromRight")
             circle1.classList.add("-onScreen")
         }
     } else if (slide === 2) {
-        if (!slide2On) {
+        if (!slideActual !== 2) {
             removeOnScreen()
             slide2.classList.add("-onScreen")
+            slide2.classList.add("-fromRight")
             circle2.classList.add("-onScreen")
         }
     } else if (slide === 3) {
-        if (!slide3On) {
+        if (slideActual !== 3) {
             removeOnScreen()
             slide3.classList.add("-onScreen")
+            slide3.classList.add("-fromRight")
             circle3.classList.add("-onScreen")
         }
     }
 }
 
+function checkActualSlide() {
+    let slide1On = slide1.classList.contains("-onScreen")
+    let slide2On = slide2.classList.contains("-onScreen")
+    let slide3On = slide3.classList.contains("-onScreen")
+
+    if (slide1On) {
+        slideActual = 1
+    } else if (slide2On) {
+        slideActual = 2
+    } else if (slide3On) {
+        slideActual = 3
+    }
+}

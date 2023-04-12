@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="styles/components/header-main.css">
     <link rel="stylesheet" href="styles/components/menu-main.css">
     <link rel="stylesheet" href="styles/components/action-link.css">
-    <link rel="stylesheet" href="styles/components/language-dropdown.css">
+    <link rel="stylesheet" href="styles/components/wrapper-main.css">
+    <link rel="stylesheet" href="styles/components/language-dropdown.css"> 
 
     <link rel="stylesheet" href="styles/components/banner-main.css">
     <link rel="stylesheet" href="styles/components/carousel-main.css">
@@ -34,7 +35,11 @@
 
     <link rel="stylesheet" href="styles/components/section-main.css">
     <link rel="stylesheet" href="styles/components/title-main.css">
+    <link rel="stylesheet" href="styles/components/article-main.css">
     <link rel="stylesheet" href="styles/components/text-main.css">
+    <link rel="stylesheet" href="styles/components/ilustration-main.css">
+
+    <link rel="stylesheet" href="styles/components/footer-main.css">
 
 </head>
 <body>
@@ -73,13 +78,13 @@
             <ol class="carousel-viewport">
                 
                 <li id="slideOne" class="slide -onScreen">
-                    <h1>1</h1>
+                    <img class="slideImage" src="assets/ilustrations/banner1.jpg" alt="">
                 </li>
                 <li id="slideTwo" class="slide">
-                    <h1>2</h1>
+                    <img class="slideImage" src="assets/ilustrations/mobiles-banner.jpg" alt="">
                 </li>
                 <li id="slideThree" class="slide">
-                    <h1>3</h1>
+                    <img class="slideImage" src="assets/ilustrations/usingPhone-banner.jpg" alt="">
                 </li>
                     
             </ol>
@@ -97,18 +102,44 @@
 
     <section class="section-main">
         
-        <h1 class="title-main">lixo eletrônico</h1>
+        <h1 class="title-main"> O que é Lixo eletrônico?</h1>
 
-        <p class="text-main">O lixo eletrônico pelo próprio nome já é possível notar que provém de materiais eletrônicos,
-            sendo de origem inorgânica alguns exemplos do mesmo são: cobre, chumbo, alumínio...
-        </p>
-        <p class="text-main">
-        Ademais, o lixo eletrônico pode implicar a vida dos seres e o meio ambiente visto que são
-            compostos por elementos bastante poluentes comprometendo ambiente e também quando estes elementos
-            entram em contato com a pele podem acarretar em diversas doenças para os animais e seres humanos.
-        </p>
+        <article class="article-main">
+
+            <article class="wrapper-main -ilustration">
+                <img class="ilustration-main" src="assets/ilustrations/question.svg" alt="Ilustração de cena de questionamento.">
+                <p class="text-main">
+                    O lixo eletrônico é todo o lixo proveniente de materiais eletrônicos,
+                    sendo de origem inorgânica alguns exemplos do mesmo são: cobre, chumbo, alumínio...
+                </p>
+            </article>
+            <article class="wrapper-main -ilustration -right">
+                <p class="text-main">
+                    Com a evolução exponencial da tecnologia o uso de aparelhos eletrônicos vem crescendo cada
+                    vez mais, e ano após ano as empresas lançam mais e mais aparelhos eletrônicos 
+                    inserindo a necessidade deles para a melhora na vida das pessoas, que muitas vezes acabam comprando
+                    equipamentos de última geração muitas vezes sem existir a tal necessidade e gerando consequentemente
+                    mais e mais lixo eletrônico.
+                </p>
+                <img class="ilustration-main" src="assets/ilustrations/conect.svg" alt="Ilustração sobre a conectividade na internet.">
+            </article>
+            
+            <article class="wrapper-main -ilustration">
+                <img class="ilustration-main" src="assets/ilustrations/teaching.svg" alt="Ilustração alguém ensinando.">
+                <p class="text-main">
+                    Por isso é necessário conscientizar as pessoas de que o lixo eletrônico pode ser prejudicial 
+                    a vida dos seres e o meio ambiente visto que são
+                    compostos por elementos bastante poluentes comprometendo o ambiente e também muitos desses elementos
+                    em contato com a pele podem trazer diversas doenças para os animais e seres humanos.
+                </p>
+            </article>
+            
+        </article>         
     </section>
     
+    <footer class="footer-main">
+        <h2 class="title-main -second">&#169;E-Waste 2023</h2>
+    </footer>
 
     <script src="scripts/components/toggleMobileMenu.js"></script>
     <script src="scripts/components/carousel-move.js"></script>
