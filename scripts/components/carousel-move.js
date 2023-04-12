@@ -24,12 +24,21 @@ setInterval( () => {
         slide1.classList.add("-onScreen")
         circle1.classList.add("-onScreen") 
     }
-}, 5000)
+}, 8000)
 
 function removeOnScreen() {
     slide1.classList.remove("-onScreen")
+    slide1.classList.remove("-fromRight")
+    slide1.classList.remove("-fromLeft")
+
     slide2.classList.remove("-onScreen")
+    slide2.classList.remove("-fromRight")
+    slide2.classList.remove("-fromLeft")
+
     slide3.classList.remove("-onScreen")
+    slide3.classList.remove("-fromRight")
+    slide3.classList.remove("-fromLeft")
+
 
     circle1.classList.remove("-onScreen")
     circle2.classList.remove("-onScreen")
@@ -40,22 +49,22 @@ function nextSlide() {
     checkActualSlide();
 
     if (slideActual === 1) {
-        slide1.classList.remove("-onScreen")
+        removeOnScreen();
         slide2.classList.add("-onScreen")  
+        slide2.classList.add("-fromRight")
 
-        circle1.classList.remove("-onScreen")
         circle2.classList.add("-onScreen")   
     } else if (slideActual === 2) {
-        slide2.classList.remove("-onScreen")
+        removeOnScreen();
         slide3.classList.add("-onScreen")
+        slide3.classList.add("-fromRight")
         
-        circle2.classList.remove("-onScreen")
         circle3.classList.add("-onScreen") 
     } else if (slideActual === 3) {
-        slide3.classList.remove("-onScreen")
+        removeOnScreen();
         slide1.classList.add("-onScreen")
+        slide1.classList.add("-fromRight")
 
-        circle3.classList.remove("-onScreen")
         circle1.classList.add("-onScreen") 
     }
 }
@@ -64,44 +73,46 @@ function previousSlide() {
     checkActualSlide();
 
     if (slideActual === 1) {
-        slide1.classList.remove("-onScreen")
+        removeOnScreen();
         slide3.classList.add("-onScreen")   
+        slide3.classList.add("-fromLeft")
 
-        circle1.classList.remove("-onScreen")
         circle3.classList.add("-onScreen")  
     } else if (slideActual === 2) {
-        slide2.classList.remove("-onScreen")
+        removeOnScreen();
         slide1.classList.add("-onScreen")
+        slide1.classList.add("-fromLeft")
 
-        circle2.classList.remove("-onScreen")
         circle1.classList.add("-onScreen") 
     } else if (slideActual === 3) {
-        slide3.classList.remove("-onScreen")
+        removeOnScreen();
         slide2.classList.add("-onScreen")
+        slide2.classList.add("-fromLeft")
 
-        circle3.classList.remove("-onScreen")
         circle2.classList.add("-onScreen") 
     }
 }
 
 function circleReference(slide) {
-
     if (slide === 1) {
-        if (!slide1On) {
+        if (slideActual !== 1) {
             removeOnScreen()
             slide1.classList.add("-onScreen")
+            slide1.classList.add("-fromRight")
             circle1.classList.add("-onScreen")
         }
     } else if (slide === 2) {
-        if (!slide2On) {
+        if (!slideActual !== 2) {
             removeOnScreen()
             slide2.classList.add("-onScreen")
+            slide2.classList.add("-fromRight")
             circle2.classList.add("-onScreen")
         }
     } else if (slide === 3) {
-        if (!slide3On) {
+        if (slideActual !== 3) {
             removeOnScreen()
             slide3.classList.add("-onScreen")
+            slide3.classList.add("-fromRight")
             circle3.classList.add("-onScreen")
         }
     }

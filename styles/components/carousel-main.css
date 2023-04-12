@@ -18,17 +18,50 @@
 }
 .carousel-viewport .slide {
     display: none;
-    background-color: white;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 .carousel-viewport .slide.-onScreen {
-    display: flex; 
+    display: flex;   
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
 }
+.carousel-viewport .slide.-onScreen.-fromRight {
+    animation: fromRight 0.6s linear;
+    
+}
+.carousel-viewport .slide.-onScreen.-fromLeft {
+    animation: fromLeft 0.6s linear;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .slide .slideImage {
     height: 100%;
     width: auto;
-    animation: roll 1s linear;
+}
+
+@keyframes fromRight {
+    from { 
+        position: absolute;
+        right: -30%;
+    } to { 
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@keyframes fromLeft {
+    from { 
+        position: absolute;
+        left: -30%;
+    } to { 
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
