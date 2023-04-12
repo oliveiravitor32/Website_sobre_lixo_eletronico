@@ -1,0 +1,21 @@
+.ilustration-main {
+    width: 20%;
+    height:auto
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .ilustration-main {
+        width: 25%;
+    }  
+}
+@media only screen and (max-width: 700px) {
+    .ilustration-main {
+        width: 30%;
+    }  
+}
+@media only screen and (max-width: 500px) {
+    .ilustration-main {
+        width: 50%;
+    }    
+}

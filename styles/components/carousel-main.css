@@ -18,11 +18,17 @@
 }
 .carousel-viewport .slide {
     display: none;
-    background-color: rgb(145, 145, 216);
+    background-color: white;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 .carousel-viewport .slide.-onScreen {
-    display: flex;
+    display: flex; 
+}
+
+.slide .slideImage {
+    height: 100%;
+    width: auto;
+    animation: roll 1s linear;
 }
