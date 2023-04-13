@@ -9,20 +9,30 @@ const circle2 = document.querySelector("#circleTwo");
 const circle3 = document.querySelector("#circleThree");
 
 let slideActual
+let activity = false
 
 setInterval( () => {
-    checkActualSlide();
-    removeOnScreen();
+    
+    if (activity === false) {
+        checkActualSlide();
+        removeOnScreen();
 
     if (slideActual === 1) {
         slide2.classList.add("-onScreen")  
+        slide2.classList.add("-fromRight")
+
         circle2.classList.add("-onScreen")   
     } else if (slideActual === 2) {
         slide3.classList.add("-onScreen")
+        slide3.classList.add("-fromRight")
+
         circle3.classList.add("-onScreen") 
     } else if (slideActual === 3) {
         slide1.classList.add("-onScreen")
+        slide1.classList.add("-fromRight")
+
         circle1.classList.add("-onScreen") 
+    }
     }
 }, 8000)
 
@@ -46,6 +56,7 @@ function removeOnScreen() {
 }
 
 function nextSlide() {
+    userActivity();
     checkActualSlide();
 
     if (slideActual === 1) {
@@ -70,6 +81,7 @@ function nextSlide() {
 }
 
 function previousSlide() {
+    userActivity();
     checkActualSlide();
 
     if (slideActual === 1) {
@@ -94,6 +106,8 @@ function previousSlide() {
 }
 
 function circleReference(slide) {
+    userActivity();
+
     if (slide === 1) {
         if (slideActual !== 1) {
             removeOnScreen()
@@ -102,7 +116,7 @@ function circleReference(slide) {
             circle1.classList.add("-onScreen")
         }
     } else if (slide === 2) {
-        if (!slideActual !== 2) {
+        if (slideActual !== 2) {
             removeOnScreen()
             slide2.classList.add("-onScreen")
             slide2.classList.add("-fromRight")
@@ -130,4 +144,12 @@ function checkActualSlide() {
     } else if (slide3On) {
         slideActual = 3
     }
+}
+
+
+async function userActivity() {
+    activity = true
+    setTimeout(() => {
+        activity=false
+    }, 10000)
 }

@@ -1,7 +1,7 @@
 .action-link {
     font-family: 'Fira Code', monospace;
     text-decoration: none;
-    color: var(--color-second);
+    color: var(--primary);
     font-weight: 700;
 }
 

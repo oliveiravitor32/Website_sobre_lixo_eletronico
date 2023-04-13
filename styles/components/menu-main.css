@@ -28,8 +28,9 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(86, 86, 218);
+    background-color: var(--royalBlueTR);
     flex-direction: column;
+    z-index: 2;
 }
 .mobile-menu.-open{
     display: block;
