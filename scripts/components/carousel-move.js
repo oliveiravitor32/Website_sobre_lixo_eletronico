@@ -11,6 +11,13 @@ const circle3 = document.querySelector("#circleThree");
 let slideActual
 let activity = false
 
+async function userActivity() {
+    activity = true
+    setTimeout(() => {
+        activity=false
+    }, 10000)
+}
+
 setInterval( () => {
     
     if (activity === false) {
@@ -107,6 +114,7 @@ function previousSlide() {
 
 function circleReference(slide) {
     userActivity();
+    checkActualSlide();
 
     if (slide === 1) {
         if (slideActual !== 1) {
@@ -147,9 +155,3 @@ function checkActualSlide() {
 }
 
 
-async function userActivity() {
-    activity = true
-    setTimeout(() => {
-        activity=false
-    }, 10000)
-}
