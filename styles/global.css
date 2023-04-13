@@ -6,8 +6,17 @@
     --color-fifth: #dfdff7;
     --color-sixth: #0f0f32;
     --color-seventh: #212135;
+
+    --primary: #eaeaea;
+
+    --first: #004A7A;
+    --sec: #5899E2;
+    --black: #1C1A1A;
+
+    --royalBlueTR: #142A6C;
+    --royalBlue: #153084;
 }
 
 body {
-    background-color: var(--color-fifth);
+    background-color: white;
 }
