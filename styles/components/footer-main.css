@@ -1,5 +1,11 @@
 .footer-main {
+    width: 100%;
     padding: 10px 0;
     text-align: center;
-    background-color: var(--color-sixth)
+    background-color: var(--color-sixth);
+}
+
+.footer-main.-contato {
+    position: absolute;
+    bottom: 0;
 }
