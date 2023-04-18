@@ -5,6 +5,12 @@
     flex-direction: column;
     gap: 10px;
 }
+.wrapper-main.-section-footer {
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 50px;
+}
 
 .wrapper-main.-ilustration {
     width: 95%;

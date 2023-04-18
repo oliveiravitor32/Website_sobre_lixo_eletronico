@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,42 +46,42 @@
 </head>
 <body>
     <header class="header-main">
-        <img class="logo" src="../../assets/images/logo.jpg" alt="">
+        <img class="logo" src="../../assets/images/logo.jpg" alt="Logo E-Waste">
         <nav id="menu-nav" class="menu-main">
-            <a class="action-link" href="../../index.html">Início</a>
-            <a class="action-link" href="">Impactos</a>
-            <a class="action-link" href="">Causas</a>
-            <a class="action-link" href="">Como combater?</a>
-            <a class="action-link" href="">Fale conosco</a>
+            <a class="action-link" href="home-en.html">Home</a>
+            <a class="action-link" href="">Impacts</a>
+            <a class="action-link" href="">Causes</a>
+            <a class="action-link" href="">How to combat?</a>
+            <a class="action-link">Contact us</a>
         
         <div class="wrapper-dropdown">
             <button class="language-dropdown" onclick="selectLanguage()">
-                Mudar idioma
-                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
+                Change language
+                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="Arrow down">
             </button>
             <div class="modal-flags">
-                <a class="flag-option"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Ícone bandeira do Brasil."></a>
-                <a class="flag-option" href="../pages-en/contacts-en.html"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Ícone bandeira dos Estados Unidos."></a>
+                <a class="flag-option" href="../pages-pt-br/contatos.html"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Icon Brazil flag."></a>
+                <a class="flag-option"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Icon EUA flag."></a>
             </div>
         </div>
              
         </nav>
 
-        <a href="#menu-nav" class="mobile-menu" onclick="toggleMenu()">Abrir e fechar menu.</a>    
+        <a href="#menu-nav" class="mobile-menu" onclick="toggleMenu()">Open and close menu.</a>    
     </header>
 
 <div class="wrapper-main -section-footer">
     <section class="section-main">
 
-        <h1 class="title-main -contato">Contate-nos</h1>
+        <h1 class="title-main -contato">Contact us</h1>
         
         <form id="form-contact" class="main-form" method="post" action="https://api.sheetmonkey.io/form/dPbNsGGtFUfN13vC1cN814">
             <div class="wrapper-form">
-                <label for="name" class="label-form"> Nome
+                <label for="name" class="label-form"> Name
                     <input class="input-form" id="name" 
                         pattern="[a-zA-Z.-]{3,}"
                         type="text" name="name" required
-                        placeholder="Seu nome"
+                        placeholder="Your name"
                         >
                 </label>
     
@@ -89,21 +89,21 @@
                     <input class="input-form" id="email" name="email" 
                         pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
                         type="email" required
-                        placeholder="email@endereço.com"
+                        placeholder="email@address.com"
                         >
                 </label>
     
-                <label for="message" class="label-form"> Mensagem
+                <label for="message" class="label-form"> Message
                     <textarea class="input-form -textarea" id="message" name="message" required 
                         rows="8" maxlength="500"
-                        placeholder="Digite sua mensagem..."
+                        placeholder="Type your message..."
                         ></textarea>
                 </label> 
             </div>
                       
             
-            <button class="button-form -send-form">
-                Enviar
+            <button class="button-form -send-form -en">
+                Send
             </button>
         </form>
     </section>

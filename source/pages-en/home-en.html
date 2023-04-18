@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="../../styles/components/header-main.css">
     <link rel="stylesheet" href="../../styles/components/menu-main.css">
     <link rel="stylesheet" href="../../styles/components/action-link.css">
-    <link rel="stylesheet" href="../../styles/components/language-dropdown.css">
+    <link rel="stylesheet" href="../../styles/components/wrapper-main.css">
+    <link rel="stylesheet" href="../../styles/components/language-dropdown.css"> 
 
     <link rel="stylesheet" href="../../styles/components/banner-main.css">
     <link rel="stylesheet" href="../../styles/components/carousel-main.css">
@@ -34,36 +35,37 @@
 
     <link rel="stylesheet" href="../../styles/components/section-main.css">
     <link rel="stylesheet" href="../../styles/components/title-main.css">
+    <link rel="stylesheet" href="../../styles/components/article-main.css">
     <link rel="stylesheet" href="../../styles/components/text-main.css">
+    <link rel="stylesheet" href="../../styles/components/ilustration-main.css">
 
     <link rel="stylesheet" href="../../styles/components/footer-main.css">
 
 </head>
 <body>
     <header class="header-main">
-        <img class="logo" src="../../assets/images/logo.jpg" alt="">
+        <img class="logo" src="../../assets/images/logo.jpg" alt="Logo E-Waste">
         <nav id="menu-nav" class="menu-main">
-            <a class="action-link" href="">Home</a>
+            <a class="action-link">Home</a>
             <a class="action-link" href="">Impacts</a>
             <a class="action-link" href="">Causes</a>
             <a class="action-link" href="">How to combat?</a>
-            <a class="action-link" href="">Contact Us</a>
-           
-            <div class="wrapper-dropdown">
-                <button class="language-dropdown" onclick="selectLanguage()">
-                    Change language
-                    <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
-                </button>
-                <div class="modal-flags">
-                    <a class="flag-option" href="../../index.html"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Icon flag of Brazil."></a>
-                    <a class="flag-option"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Icon flag of United States."></a>
-                </div>
+            <a class="action-link" href="contacts-en.html">Contact us</a>
+        
+        <div class="wrapper-dropdown">
+            <button class="language-dropdown" onclick="selectLanguage()">
+                Change language
+                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="Arrow down">
+            </button>
+            <div class="modal-flags">
+                <a class="flag-option" href="../../index.html"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Icon Brazil flag."></a>
+                <a class="flag-option"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Icon EUA flag."></a>
             </div>
+        </div>
+             
         </nav>
 
-        <a href="#menu-nav" class="mobile-menu" onclick="toggleMenu()">Open and close menu.</a>
-
-        
+        <a href="#menu-nav" class="mobile-menu" onclick="toggleMenu()">Open and close menu.</a>    
     </header>
 
     <section class="banner-main">
@@ -74,13 +76,13 @@
             <ol class="carousel-viewport">
                 
                 <li id="slideOne" class="slide -onScreen">
-                    <h1>1</h1>
+                    <img class="slideImage" src="../../assets/ilustrations/banner-e-waste.jpg" alt="">
                 </li>
                 <li id="slideTwo" class="slide">
-                    <h1>2</h1>
+                    <img class="slideImage" src="../../assets/ilustrations/concientizar.svg" alt="">
                 </li>
                 <li id="slideThree" class="slide">
-                    <h1>3</h1>
+                    <img class="slideImage" src="../../assets/ilustrations/banner3s.jpg" alt="">
                 </li>
                     
             </ol>
@@ -98,16 +100,39 @@
 
     <section class="section-main">
         
-        <h1 class="title-main">Eletronic waste</h1>
+        <h1 class="title-main"> What is electronic waste?</h1>
 
-        <p class="text-main">The electronic waste by the name itself it is already possible to notice that it comes from electronic materials,
-             being of inorganic origin some examples of it are: copper, lead, aluminum...
-        </p>
-        <p class="text-main">
-        In addition, the electronic waste can implicate the lives of beings and the environment since they are
-        composed of very polluting elements compromising the environment and also when these elements
-        come into contact with the skin can lead to various diseases for animals and humans.
-        </p>
+        <article class="article-main">
+
+            <article class="wrapper-main -ilustration">
+                <img class="ilustration-main" src="../../assets/ilustrations/question.svg" alt="Questioning scene illustration.">
+                <p class="text-main">
+                    E-waste is all waste from electronic materials,
+                    being of inorganic origin some examples of it are: copper, lead, aluminum...
+                </p>
+            </article>
+            <article class="wrapper-main -ilustration -right">
+                <p class="text-main">
+                    With the exponential evolution of technology, the use of electronic devices is growing every day.
+                    more and more, and year after year companies launch more and more electronic gadgets
+                    inserting their need to improve people's lives, who often end up buying
+                    state-of-the-art equipment, often without such a need and consequently generating
+                    more and more junk mail.
+                </p>
+                <img class="ilustration-main" src="../../assets/ilustrations/conect.svg" alt="Illustration about internet connectivity.">
+            </article>
+            
+            <article class="wrapper-main -ilustration">
+                <img class="ilustration-main" src="../../assets/ilustrations/teaching.svg" alt="Illustration someone teaching.">
+                <p class="text-main">
+                    Therefore, it is necessary to make people aware that electronic waste can be harmful.
+                    the lives of beings and the environment, as they are
+                    composed of very polluting elements compromising the environment and also many of these elements
+                    in contact with the skin can bring various diseases to animals and humans.
+                </p>
+            </article>
+            
+        </article>   
     </section>
     
     <footer class="footer-main">
