@@ -1,6 +1,7 @@
 .main-form {
     width: 100%;
     max-width: 1100px;
+    margin-top: 40px;
     padding: 0 30px;
     display: flex;
     flex-direction: column;
@@ -38,15 +39,32 @@
 }
 
 .main-form .button-form {
-    padding: 10px 0;
+    padding: 12px 0;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     box-shadow: 5px 5px 0px black;
     border: 2px solid #142A6C;
     background-color: white;
-    
+    box-sizing: border-box;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-form .button-form:hover {
     transform: scale(1.01);
+    cursor: pointer;
+}
+
+.main-form .button-form .loading-send-form {
+    animation: loading 1s infinite ease-in-out;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }   
 }
