@@ -1,15 +1,19 @@
 .header-main {
     position: relative;
-    background-color: var(--royalBlueTR);
+    background-color: var(--remaster);
     
     box-sizing: border-box;
-    padding: 20px 30px;
+    height: 70px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header-main .logo {
-    height: 45px;
-    width: auto;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
 }

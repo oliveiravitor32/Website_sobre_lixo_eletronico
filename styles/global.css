@@ -9,15 +9,17 @@
 
     --primary: #eaeaea;
 
-    --first: #004A7A;
+    --afirst: #004A7A;
     --sec: #5899E2;
     --black: #1C1A1A;
 
     --royalBlueTR: #142A6C;
     --royalBlue: #153084;
+
+    --remaster: #101026;
 }
 
 body {
     background-color: #eaeaea;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
