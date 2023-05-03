@@ -3,13 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     gap: 40px;
     left: 0px;
+    box-sizing: border-box;
 }
-.menu-main.-open { 
-    left: 0; 
-}
+
 
 
 
@@ -72,19 +71,21 @@
 
 @media screen and (max-width: 970px) {
     .menu-main {
-        display: block;
+        position: absolute;
         top: 70px;
-        left: -100%;
+        left: -98%;
         display: flex;
         border-radius: 0 0 20px 20px;
         background-color: #101026;
         text-align: center;
         flex-direction: column;
-        transition: 0.3s;
         z-index: 3;
         padding: 20px 0;
         gap: 30px;
-        position: absolute;
+        transition: 0.3s;    
+    }
+    .menu-main.-open {    
+        left: 0; 
     }
     .mobile-menu {
         display: block;

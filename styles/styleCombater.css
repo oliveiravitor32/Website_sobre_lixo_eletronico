@@ -72,6 +72,11 @@ header{
     display: none;
     width: auto;
 }
+.slides .slide-image{
+    height: 400px;
+    width: 100%;
+    object-fit: cover
+}
 
 .slideshow-container{  /*contêiner de apresentação de slides*/
     position: relative; 
@@ -194,9 +199,7 @@ header{
     .slides{
         width: 100%;
     }
-    .slides .slide-image{
-        width: 100%;
-    }
+   
 }
 @media only screen and (max-width: 850px) {
     .wrapper-main{
