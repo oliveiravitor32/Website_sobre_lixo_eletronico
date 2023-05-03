@@ -47,11 +47,11 @@
         <a href="/" class="logo">E-Waste</a>
 
         <nav id="menu-nav" class="menu-main">
-            <a class="action-link" href="/">Home</a>
+            <a class="action-link" href="home-en.html">Home</a>
             <a class="action-link" href="">Impacts</a>
             <a class="action-link" href="">Causes</a>
             <a class="action-link" href="comoCombater-en.html">How to combat?</a>
-            <a class="action-link" href="source/pages-pt-br/contatos.html">Contact us</a>
+            <a class="action-link" href="contacts-en.html">Contact us</a>
         
             <div class="wrapper-dropdown">
             <button class="language-dropdown" onclick="selectLanguage()">
@@ -79,13 +79,28 @@
             <ol class="carousel-viewport">
                 
                 <li id="slideOne" class="slide -onScreen">
-                    <img class="slideImage" src="../../assets/ilustrations/banner-e-waste.jpg" alt="">
+                    <picture> 
+                        <source srcset="../../assets/slides/slide1px2000.jpg" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide1px1500.jpg" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide1px800.jpg" alt="">
+                        <figcaption class="caption-slide">E-Waste</figcaption>
+                    </picture>
                 </li>
                 <li id="slideTwo" class="slide">
-                    <img class="slideImage" src="../../assets/ilustrations/concientizar.svg" alt="">
+                    <picture>
+                        <source srcset="../../assets/slides/slide2px2000.jpg" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide2px1500.jpg" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide2px800.jpg" alt="">
+                        <figcaption class="caption-slide">We are your partner in combat!</figcaption>
+                    </picture>    
                 </li>
                 <li id="slideThree" class="slide">
-                    <img class="slideImage" src="../../assets/ilustrations/banner3s.jpg" alt="">
+                    <picture>
+                        <source srcset="../../assets/slides/slide3px2000.jpg" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide3px1500.jpg" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide3px800.jpg" alt="">
+                        <figcaption class="caption-slide">Dispose correctly!</figcaption>
+                    </picture>               
                 </li>
                     
             </ol>

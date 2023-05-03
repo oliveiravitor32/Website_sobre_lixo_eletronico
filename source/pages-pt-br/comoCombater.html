@@ -5,34 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/styleCombater.css">
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components/header-main.css">
+    <link rel="stylesheet" href="../../styles/components/menu-main.css">
+    <link rel="stylesheet" href="../../styles/components/action-link.css">
+    <link rel="stylesheet" href="../../styles/components/wrapper-main.css">
+    <link rel="stylesheet" href="../../styles/components/language-dropdown.css">
+
     <title>E-Waste | Como combater?</title>
 </head>
 <body>
     <!--Menu principal-->
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">E-Waste</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="../../index.html" class="nav-link" lang="en">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Impactos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Causas</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Como combater?</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Fale conosco</a></li>
-            </ul>
-            <!--Menu hamburguer-->
-            <div class="hamburguer">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header class="header-main">
+        <a href="/" class="logo">E-Waste</a>
+
+        <nav id="menu-nav" class="menu-main">
+            <a class="action-link" href="../../index.html" lang="en">Home</a>
+            <a class="action-link" href="">Impactos</a>
+            <a class="action-link" href="">Causas</a>
+            <a class="action-link" href="../../source/pages-pt-br/comoCombater.html">Como combater?</a>
+            <a class="action-link" href="../../source/pages-pt-br/contatos.html">Fale conosco</a>
+        
+            <div class="wrapper-dropdown">
+            <button class="language-dropdown" onclick="selectLanguage()">
+                Mudar idioma
+                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
+            </button>
+            <div class="modal-flags">
+                <a class="flag-option"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Ícone bandeira do Brasil."></a>
+                <a class="flag-option" href="../../source/pages-en/home-en.html"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Ícone bandeira dos Estados Unidos."></a>
             </div>
+        </div>
+             
         </nav>
+
+        <a class="mobile-menu" onclick="toggleMenu()"><span class="lines">Menu</span></a>
+
+        
     </header>
 
     
     <!--Slide Show-->
     <section class="slideshow-container" >
             <div class="slides">
-                <img class="slide-image" src="../../assets/images/banner3.png">
+                <img class="slide-image" src="../../assets/images/banner.png">
             </div>
             <div class="slides">
                 <img class="slide-image" src="../../assets/images/banner2.png">
@@ -111,5 +128,7 @@
     </footer>   
     <!--Chamando o script-->  
     <script src="../../scripts/scriptCombater.js"></script>
+    <script src="../../scripts/components/toggleMobileMenu.js"></script>
+    <script src="../../scripts/components/dropdown-flags.js"></script>
 </body>
 </html>
