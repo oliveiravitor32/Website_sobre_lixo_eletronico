@@ -53,7 +53,15 @@
     pointer-events: none;
     text-align: center;
 }
-
+.nav-slides {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+    transform: translateX(-50%);
+    list-style: none;
+}
 
 @keyframes fromRight {
     from { 

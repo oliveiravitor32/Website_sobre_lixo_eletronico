@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components/header-main.css">
+    <link rel="stylesheet" href="../../styles/components/menu-main.css">
+    <link rel="stylesheet" href="../../styles/components/action-link.css">
+    <link rel="stylesheet" href="../../styles/components/wrapper-main.css">
+    <link rel="stylesheet" href="../../styles/components/language-dropdown.css">
+
+    <link rel="stylesheet" href="../../styles/components/banner-main.css">
+    <link rel="stylesheet" href="../../styles/components/carousel-main.css">
+    <link rel="stylesheet" href="../../styles/components/button-arrow.css">
+    <link rel="stylesheet" href="../../styles/components/button-circle.css">
+
+    <link rel="stylesheet" href="../../styles/components/title-main.css">
+
+    <link rel="stylesheet" href="../../styles/components/footer-main.css">
+
+    <link rel="stylesheet" href="../../styles/styleImpactos.css">
+
+    
+    <link rel="stylesheet" href="style/css.css">
+
+    <title>Impactos</title>
+</head>
+<body>
+    <header class="header-main">
+        <a href="/" class="logo">E-Waste</a>
+
+        <nav id="menu-nav" class="menu-main">
+            <a class="action-link" href="../../index.html" lang="en">Home</a>
+            <a class="action-link" href="../../source/pages-pt-br/Impactos.html">Impactos</a>
+            <a class="action-link" href="">Causas</a>
+            <a class="action-link" href="../../source/pages-pt-br/comoCombater.html">Como combater?</a>
+            <a class="action-link" href="../../source/pages-pt-br/contatos.html">Fale conosco</a>
+        
+            <div class="wrapper-dropdown">
+            <button class="language-dropdown" onclick="selectLanguage()">
+                Mudar idioma
+                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
+            </button>
+            <div class="modal-flags">
+                <a class="flag-option"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Ícone bandeira do Brasil."></a>
+                <a class="flag-option" href="../pages-en/howToCombat-en.html"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Ícone bandeira dos Estados Unidos."></a>
+            </div>
+        </div>
+             
+        </nav>
+
+        <a class="mobile-menu" onclick="toggleMenu()"><span class="lines">Menu</span></a>
+
+        
+    </header>
+
+    <section class="banner-main">
+
+        <div class="carousel-main">
+        <button class="button-arrow -left" onclick="previousSlide()">Ir para o slide anterior</button>
+
+            <ol class="carousel-viewport">
+                
+                <li id="slideOne" class="slide -onScreen">
+                    <picture> 
+                        <source srcset="../../assets/slides/slide1px2000.jpg" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide1px1500.jpg" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide1px800.jpg" alt="">
+                        <figcaption class="caption-slide">E-Waste</figcaption>
+                    </picture>
+                </li>
+                <li id="slideTwo" class="slide">
+                    <picture>
+                        <source srcset="../../assets/slides/slide2px2000.jpg" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide2px1500.jpg" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide2px800.jpg" alt="">
+                        <figcaption class="caption-slide">Somos seu parceiro na hora do combate!</figcaption>
+                    </picture>    
+                </li>
+                <li id="slideThree" class="slide">
+                    <picture>
+                        <source srcset="../../assets/slides/slide3px2000.jpg" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide3px1500.jpg" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide3px800.jpg" alt="">
+                        <figcaption class="caption-slide">Faça o descarte correto!</figcaption>
+                    </picture>               
+                </li>
+                    
+            </ol>
+
+            <ol class="nav-slides">
+                <li id="circleOne" class="button-circle -onScreen" onclick="circleReference(1)">Ir para o slide um.</li>
+                <li id="circleTwo" class="button-circle" onclick="circleReference(2)">Ir para o slide dois.</li>
+                <li id="circleThree" class="button-circle" onclick="circleReference(3)">Ir para o slide três.</li>
+            </ol>
+
+        <button class="button-arrow -right" onclick="nextSlide()">Ir para o próximo slide</button>
+        </div>
+
+    </section>
+   
+    
+
+<section>
+    <h1 class="title-main">Impactos do lixo eletrônico</h1>
+    
+
+    <div class="embrulho">
+
+            <h2>Redução do tempo de vida útil dos aterros sanitários</h2>
+        
+    <article class="divtext">
+            <img class="sideimg" src="../../assets/imgImpactos/LearningImpact.svg" alt="">
+            <p class="sidetext">Com o aumento da produção de resíduos, os aterros sanitários estão se tornando rapidamente sobrecarregados, o que reduz seu tempo de vida útil. A falta de reciclagem e reutilização de materiais, bem como a falta de políticas públicas efetivas para lidar com o problema, contribuem para o aumento da quantidade de resíduos em aterros sanitários. Para enfrentar esse desafio, é necessário adotar práticas mais sustentáveis de produção e consumo, incentivar a reciclagem e a reutilização de materiais conscientizar a população sobre a importância de adotar práticas mais sustentáveis em seu cotidiano. 
+            </p>
+        </article>
+
+            <h2>Contaminação por metais pesados </h2>
+        
+    <article class="divtext -right">   
+        
+            <p class="sidetext">A contaminação por metais pesados é um problema grave que ocorre quando esses elementos são liberados no meio ambiente por meio de atividades humanas, como a mineração e a produção industrial. Esses metais podem se acumular em solos, águas e organismos vivos, causando graves danos à saúde
+            humana e ao meio ambiente. Alguns exemplos de metais pesados que causamcontaminação são o chumbo, mercúrio, cádmio e arsênio. Para evitar a contaminação por metais pesados, é necessário adotar práticas mais sustentáveis na produção e consumo de produtos, bem como políticas públicas que regulamentem o uso desses elementos e incentivem o desenvolvimento de tecnologias mais limpas. Além disso, a conscientização da população sobre os riscos associados à exposição a metais pesados é fundamental para prevenir a contaminação.</p>
+
+            <img class="sideimg" src="../../assets/imgImpactos/learningImpactos2.svg" alt="">
+            </article>
+
+            <h2>Danos à saúde pública</h2>
+        
+    <article class="divtext">
+        <img class="sideimg" src="../../assets/imgImpactos/publicDamage.svg" alt="">
+            <p class="sidetext">O descarte inadequado de lixo eletrônico pode causar sérios danos à saúde pública. Isso ocorre porque muitos dos componentes eletrônicos contêm substâncias tóxicas, como chumbo, mercúrio, cádmio e bifenilos policlorados (PCBs), que podem ser liberados no meio ambiente e causar contaminação de solos, água e ar. A exposição a essas substâncias pode causar problemas respiratórios, neurológicos e reprodutivos, bem como aumentar o risco de câncer e outros problemas de saúde. Para evitar esses danos, é fundamental que o lixo eletrônico seja descartado corretamente, por meio de programas de coleta seletiva e reciclagem, além de incentivar a produção de eletrônicos mais conscientes e com menor impacto ambiental.</p>
+        </article>
+    </div>
+</section>
+    
+   
+    <!--quando subir-->
+    <footer class="footer-main">
+        <h2 class="title-main -second">&#169;E-Waste 2023</h2>
+    </footer>
+
+</body>
+</html>
