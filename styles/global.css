@@ -17,9 +17,10 @@
     --royalBlue: #153084;
 
     --remaster: #101026;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: #d3d3d3;
     font-family: sans-serif;
 }

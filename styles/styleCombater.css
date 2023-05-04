@@ -68,15 +68,6 @@ header{
     transition: all 0.3s ease-in-out; /*Pega todos os tracinhos, tempo e realiza a transição com o início e final lento*/
 }
 
-.slides{
-    display: none;
-    width: auto;
-}
-.slides .slide-image{
-    height: 400px;
-    width: 100%;
-    object-fit: cover
-}
 
 .slideshow-container{  /*contêiner de apresentação de slides*/
     position: relative; 
@@ -190,17 +181,6 @@ header{
     background-color: #101026;
 }
 
-.title-main.-second {
-    color: white;
-    font-size: 18px;
-}
-
-@media only screen and (min-width: 1350px) {
-    .slides{
-        width: 100%;
-    }
-   
-}
 @media only screen and (max-width: 850px) {
     .wrapper-main{
         width: 100%;
@@ -264,17 +244,11 @@ header{
     .wrapper-main.-ilustration{
         width: 100%;
     }
-    .title-main {
-        font-size: 24px;
-    }
     .text-main {
         font-size: 18px;
     }
 }
 @media only screen and (max-width: 400px) {
-    .title-main {
-        font-size: 19px;
-    }
     .text-main {
         font-size: 15px;
     }
