@@ -50,7 +50,7 @@
         <nav id="menu-nav" class="menu-main">
             <a class="action-link" href="home-en.html">Home</a>
             <a class="action-link" href="impacts-en.html">Impacts</a>
-            <a class="action-link" href="">Causes</a>
+            <a class="action-link" href="causes-en.html">Causes</a>
             <a class="action-link" href="../pages-en/howToCombat-en.html">How to combat?</a>
             <a class="action-link" href="../pages-en/contacts-en.html">Contact us</a>
         
@@ -72,48 +72,49 @@
         
     </header>
 
-<div class="wrapper-main -section-footer">
-    <section class="section-main">
-
-        <h1 class="title-main -contato">Contact us</h1>
-        
-        <form id="form-contact" class="main-form" method="post" action="https://api.sheetmonkey.io/form/dPbNsGGtFUfN13vC1cN814">
-            <div class="wrapper-form">
-                <label for="name" class="label-form"> Name
-                    <input class="input-form" id="name" 
-                        pattern="[a-zA-Z][a-zA-Z\s]*"
-                        type="text" name="name" required
-                        placeholder="Your name"
-                        >
-                </label>
-    
-                <label for="email" class="label-form"> Email
-                    <input class="input-form" id="email" name="email" 
-                        pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
-                        type="email" required
-                        placeholder="email@address.com"
-                        >
-                </label>
-    
-                <label for="message" class="label-form"> Message
-                    <textarea class="input-form -textarea" id="message" name="message" required 
-                        rows="8" maxlength="500"
-                        placeholder="Type your message..."
-                        ></textarea>
-                </label> 
-            </div>
-                      
+    <div class="wrapper-main -section-footer">
+        <section class="section-main">
+            <div class="container-form">
+                
+                <img class="image-form" src="../../assets/images/img.png" alt="">
             
-            <button class="button-form -send-form -en">
-                Send
-            </button>
-        </form>
-    </section>
+                <div class="form-content">
+                    <h1 class="title-form">Contact us</h1>
 
-    <footer class="footer-main">
-        <h2 class="title-main -second">&#169;E-Waste 2023</h2>
-    </footer>
-</div>
+                    <form id="form-contact" class="main-form" method="post"
+                        action="https://api.sheetmonkey.io/form/dPbNsGGtFUfN13vC1cN814">
+                        <div class="wrapper-form">
+                            <label for="name" class="label-form"> Name
+                                <input class="input-form" id="name" pattern="[a-zA-Z][a-zA-Z\s]*" type="text"
+                                    name="name" required placeholder="Your name">
+                            </label>
+
+                            <label for="email" class="label-form"> Email
+                                <input class="input-form" id="email" name="email"
+                                    pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" type="email" required
+                                    placeholder="email@address.com">
+                            </label>
+
+                            <label for="message" class="label-form"> Message
+                                <textarea class="input-form -textarea" id="message" name="message" required rows="8"
+                                    maxlength="500" placeholder="Type your message..."></textarea>
+                            </label>
+                        </div>
+
+
+                        <button class="button-form -send-form -en">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer-main">
+            <h2 class="title-main -second">&#169;E-Waste 2023</h2>
+        </footer>
+    </div>
 
     <script src="../../scripts/components/toggleMobileMenu.js"></script>
     <script src="../../scripts/components/dropdown-flags.js"></script>

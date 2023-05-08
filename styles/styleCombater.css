@@ -122,13 +122,14 @@ header{
     background-color: white;
 }
 
-.title-main {
+.title-mainC {
     margin: 30px 0 40px 0;
     font-size: 28px;
     font-weight: bold;
+    color: white;
 }
 
-.section-main{
+.section-mainC{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -136,14 +137,14 @@ header{
     justify-content: center;
 }
 
-.article-main{
+.article-mainC{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.wrapper-main{
+.wrapper-mainC{
     width: 100%;
     display: flex;
     text-align: justify;
@@ -154,42 +155,46 @@ header{
     gap: 10px;
     font-size: 20px;
 }
+.text-mainC {
+    width: 50%;
+}
+.text-mainC.paragraph {
+    width: 90%;
+}
 
-.wrapper-main.-ilustration{
-    width: 80%;
+.wrapper-mainC.-ilustrationC{
+    width: 100%;
     flex-direction: row;
     justify-content: center;
 }
 
-.ilustration-main {
-    width: 38%;
+
+.ilustration-mainC {
+    width: 40%;
     height: auto;
     min-width: 290px;
 }
 
-.article-main{
+.article-mainC{
     width: 100%;
 }
-.wrapper-main .paragraph{
-    width: 80%;
-}
 
-.footer-main {
+.footer-mainC {
     width: 100%;  
     padding: 1px 2px 2px 1px;
     text-align: center;;
     background-color: #101026;
 }
 
-@media only screen and (max-width: 850px) {
-    .wrapper-main{
+@media only screen and (max-width: 900px) {
+    .wrapper-mainC{
         width: 100%;
     }
-    .wrapper-main.-ilustration{
+    .wrapper-mainC .paragraph{
         width: 85%;
     }
-    .wrapper-main .paragraph{
-        width: 85%;
+    .text-mainC {
+        width: 50%;
     }
 }
 @media only screen and (max-width: 780px){
@@ -225,31 +230,39 @@ header{
         left: 0; /*Volta mostrar a NavBar*/
     }
 
-    .wrapper-main.-ilustration {
+    .wrapper-mainC.-ilustrationC {
         flex-direction: column;
         gap: 0;
-    }.wrapper-main.-ilustration.-right {
-        flex-direction: column-reverse;
+    }
+    .wrapper-mainC {
+        gap: 5px;
+    }
+    .wrapper-mainC.-ilustrationC .text-mainC {
+        width: 85%;
+        margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .wrapper-main{
+    .wrapper-mainC{
         width: 100%;
     }
-    .wrapper-main .text-main{
+    .wrapper-mainC .text-mainC{
         width: 90%;
 
     }
-    .wrapper-main.-ilustration{
+    .wrapper-mainC.-ilustrationC{
         width: 100%;
     }
-    .text-main {
+    .text-mainC {
         font-size: 18px;
+    }
+    .wrapper-mainC.-ilustrationC .text-mainC {
+        width: 90%;
     }
 }
 @media only screen and (max-width: 400px) {
-    .text-main {
+    .text-mainC {
         font-size: 15px;
     }
 }
