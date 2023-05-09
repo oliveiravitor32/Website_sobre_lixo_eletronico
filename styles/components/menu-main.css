@@ -26,20 +26,13 @@
     cursor: pointer;
 }
 .mobile-menu .lines { 
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-}
-.mobile-menu .lines::after { 
-    content: "";
     position: absolute;
+    top: 50%;
     display: block;
     width: 100%;
     height: 3px;
     background-color: white;
-    top: 11px;
-    transition: all 0.4s;
+    border-radius: 2px;
 }
 .mobile-menu .lines::before { 
     content: "";
@@ -48,9 +41,22 @@
     width: 100%;
     height: 3px;
     background-color: white;
-    top: 22px;
+    top: -11px;
     transition: all 0.4s;
+    border-radius: 2px;
 }
+.mobile-menu .lines::after { 
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    top: 10px;
+    transition: all 0.4s;
+    border-radius: 2px;
+}
+
 
 
 .mobile-menu.-open{
@@ -62,10 +68,11 @@
 }
 .mobile-menu.-open .lines::after { 
     transition: all 0.4s;
-    transform: rotate(45deg) translate(-0px, 1px);
+    transform: rotate(-45deg) translate(8px, -8px);
+    
 }
 .mobile-menu.-open .lines::before { 
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(45deg) translate(7px, 7px);
 }
 
 

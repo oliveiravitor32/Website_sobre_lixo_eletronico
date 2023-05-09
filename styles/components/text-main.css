@@ -2,9 +2,9 @@
     font-family: sans-serif;
     text-align: justify;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.6;
     display: inline-block;
-    width: 40%;
+    width: 50%;
     margin: 25px 0;
 }
 
@@ -19,7 +19,7 @@
         width: 65%;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .text-main {
         width: 90%;
         font-size: 18px;
