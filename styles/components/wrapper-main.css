@@ -18,7 +18,7 @@
     justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .wrapper-main.-ilustration {
         width: 95%;
         flex-direction: column;

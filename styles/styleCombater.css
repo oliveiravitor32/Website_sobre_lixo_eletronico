@@ -159,7 +159,7 @@ header{
     width: 50%;
 }
 .text-mainC.paragraph {
-    width: 90%;
+    width: 80%;
 }
 
 .wrapper-mainC.-ilustrationC{
@@ -170,7 +170,7 @@ header{
 
 
 .ilustration-mainC {
-    width: 40%;
+    width: 30%;
     height: auto;
     min-width: 290px;
 }

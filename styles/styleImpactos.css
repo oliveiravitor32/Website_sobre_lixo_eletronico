@@ -45,11 +45,10 @@ header{
 }
 
 .embrulho {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .divtext {
@@ -57,19 +56,21 @@ header{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 50px;
+}
+.subtitleI {
+text-align: center;
 }
 
 .sideimg {
-    width: 20%;
+    width: 30%;
     height: auto;
     background-color: transparent;
 }
 .sidetext {
     text-align: justify;
     font-size:20px;
-    width: 40%;
-    line-height: 20px;
+    width: 50%;
+    line-height: 1.6;
     font-weight: 500;
     font-family: sans-serif;
 }
@@ -79,12 +80,12 @@ header{
         width: 50%;   
     }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 750px) {
     .sidetext {
-        width: 65%;
+        width: 60%;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .divtext {
         flex-direction: column;
     } 
