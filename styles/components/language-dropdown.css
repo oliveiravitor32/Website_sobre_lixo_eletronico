@@ -37,11 +37,15 @@
 
     border: 1px solid rgb(153, 152, 152);
     display: none;
+    border-radius: 0 0 10px 10px;
 }
 .modal-flags .flag-option {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.modal-flags .flag-option:last-child {
+    border-radius: 0 0 10px 10px;
 }
 .modal-flags .flag-option:hover {
     background-color: rgb(212, 207, 207);
