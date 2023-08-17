@@ -6,7 +6,7 @@
 
 ## 💻 Projeto
 
-E-Waste é um site totalmente responsivo desenvolvido durante as aulas na Unip de Programação Web Responsiva.
+E-Waste é um site totalmente responsivo desenvolvido na Unip durante as aulas de Programação Web Responsiva.
 
 - [Acesse o projeto finalizado, online](https://oliveiravitor32.github.io/E-Waste/)
 
