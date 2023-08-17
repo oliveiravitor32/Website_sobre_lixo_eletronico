@@ -8,7 +8,7 @@
 
 E-Waste é um site totalmente responsivo desenvolvido durante as aulas na Unip de Programação Web Responsiva.
 
-- [Acesse o projeto finalizado, online](https://helen-silv4.github.io/e-waste/)
+- [Acesse o projeto finalizado, online](https://oliveiravitor32.github.io/E-Waste/)
 
 ## 🚀 Tecnologias
 
